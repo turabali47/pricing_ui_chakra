@@ -5,13 +5,13 @@ import Tickmark from './Tickmark'
 export default function Pricing() {
   return (
     <Box 
-        width={"950px"} 
-        mx="auto" 
+        maxWidth={"950px"} 
+        mx={{base:"25px", lg:"auto"}} 
         mt={"-150px"} 
         borderRadius="12px" 
         overflow={"hidden"}
         boxShadow= "dark-lg">
-        <Flex>
+        <Flex direction={{base:"column", md:"row", lg:"row"}}>
             <Box textAlign={"center"} px="50px" py={"50px"} bg="#dfdff0">
                 <Text fontSize={"24px"} fontWeight="bold">Premium PRO</Text>
                 <Heading fontSize={"60px"} fontWeight="bold">$329</Heading>
